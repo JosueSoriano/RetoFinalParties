@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'lgf.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'partygames',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': '192.168.56.114',
+        'PORT': '5432',
     }
 }
 

@@ -26,7 +26,7 @@ class Videogame(LfgModel):
 
 class Party(LfgModel):
     name = models.CharField(max_length=200)
-    videogame = models.ForeignKey(Videogame,on_delete=models.CASCADE)
+    videogame = models.ForeignKey(Videogame, on_delete=models.CASCADE)
     created_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self) -> str:
